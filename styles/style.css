@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+/* Mobile Version */
+
+/* To center an header-logo, I used display:flex and it's acquitant elements and to set img for exact px from  top I used padding-top */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+/* From here main part of page will stlye */
+
+main {
+  border-radius: 25px 25px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
