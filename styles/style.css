@@ -40,6 +40,12 @@ main {
   padding: 3.2rem 2.4rem;
 }
 
+/* Here is upper-section part */
+
+.upper-section {
+  padding-bottom: 3.2rem;
+}
+
 /* Here is bill-amount style */
 
 .bill-amount {
@@ -55,7 +61,7 @@ main {
   line-height: normal;
 }
 
-#bill {
+.button-for-input {
   border-radius: 5px;
   background: #f3f9fa;
   width: 100%;
@@ -79,10 +85,169 @@ main {
 
 /* Here starts tip selection area */
 
+.tip-amount {
+  margin: 3.2rem 0 3.8rem;
+}
+
 .tip-perc {
   color: #5e7a7d;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
-  margin: 3.2rem 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.tip-example {
+  width: 47%;
+  height: 48px;
+  border-radius: 5px;
+  background: #00474b;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom {
+  border-radius: 5px;
+  background: #f3f9fa;
+  color: #547878;
+}
+
+/* Now, here we have a number of people section */
+
+.number-people {
+  position: relative;
+}
+
+.icon-person {
+  position: absolute;
+  top: 57%;
+  left: 5%;
+}
+
+.people-header {
+  color: #5e7a7d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* From now on there is section-bottom part */
+
+.bottom-section {
+  border-radius: 15px;
+  background: #00474b;
+  padding: 0 2rem 2.4rem;
+  text-align: center;
+}
+
+.calculated {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calculated-p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+span {
+  color: #7f9d9f;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tip-calculated-number {
+  color: #26c2ae;
+  text-align: right;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.667px;
+}
+
+.reset {
+  border-radius: 5px;
+  background: #26c2ae;
+  min-width: 281px;
+  min-height: 48px;
+  border: none;
+  color: #00474b;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 3.2rem auto 0;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 900px) {
+  /* Header part for desktop version */
+  header {
+    padding-top: 16.3rem;
+  }
+
+  /* From here main part of page will stlye */
+
+  main {
+    border-radius: 25px;
+    width: 74%;
+    height: 481px;
+    margin-top: 8.7rem;
+    flex-direction: row;
+    padding: 3.2rem 3.2rem 4.8rem;
+    gap: 2.5rem;
+    margin: 8.7rem auto 23rem;
+  }
+
+  /* Here is bill-amount style */
+
+  .bill-h {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Here is upper-section part */
+
+  .upper-section {
+    padding-bottom: 0;
+  }
+
+  /* Here starts tip selection area */
+
+  .buttons {
+    justify-content: unset;
+    gap: 1.6rem;
+  }
+
+  .tip-example {
+    width: 117px;
+    height: 48px;
+  }
+
+  /* Now, here we have a number of people section */
+
+  .people-header {
+    padding-bottom: 1.5rem;
+  }
+
+  /* From now on there is section-bottom part */
+
+  .reset {
+    margin: 15rem auto 0;
+  }
 }
