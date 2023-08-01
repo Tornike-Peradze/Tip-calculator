@@ -73,17 +73,7 @@ main {
   font-family: Space Mono;
   font-weight: 700;
   line-height: normal;
-  opacity: 0.3499999940395355;
   padding-right: 2%;
-}
-
-.button-for-input:active {
-  color: #00474b;
-  text-align: right;
-  font-family: Space Mono;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .button-for-input:hover {
@@ -134,7 +124,7 @@ main {
   line-height: normal;
 }
 
-.tip-example:active {
+.tip-example:visited {
   background: #26c2ae;
 }
 
@@ -227,7 +217,7 @@ span {
   letter-spacing: -0.667px;
 }
 
-.reset {
+#reset {
   border-radius: 5px;
   background: #0d686d;
   min-width: 281px;
@@ -241,11 +231,11 @@ span {
   margin: 3.2rem auto 0;
 }
 
-.reset:visited {
+#reset:visited {
   background: #26c2ae;
 }
 
-.reset:hover {
+#reset:hover {
   background: #9fe8df;
 }
 
@@ -317,7 +307,7 @@ span {
 
   /* From now on there is section-bottom part */
 
-  .reset {
+  #reset {
     margin: 15rem auto 0;
     cursor: pointer;
   }
