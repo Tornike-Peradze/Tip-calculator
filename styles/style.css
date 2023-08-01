@@ -70,8 +70,10 @@ main {
   color: #00474b;
   text-align: right;
   font-size: 24px;
+  font-family: Space Mono;
   font-weight: 700;
   line-height: normal;
+  opacity: 0.3499999940395355;
   padding-right: 2%;
 }
 
@@ -182,7 +184,7 @@ span {
 
 .reset {
   border-radius: 5px;
-  background: #26c2ae;
+  background: #0d686d;
   min-width: 281px;
   min-height: 48px;
   border: none;
@@ -239,15 +241,27 @@ span {
     height: 48px;
   }
 
+  .dollar {
+    height: 2rem;
+    top: 59%;
+    left: 5%;
+  }
+
   /* Now, here we have a number of people section */
 
   .people-header {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
 
   /* From now on there is section-bottom part */
 
   .reset {
     margin: 15rem auto 0;
+  }
+
+  /* Here starts tip selection area */
+
+  .tip-amount {
+    margin: 2.2rem 0 3.8rem;
   }
 }
