@@ -77,6 +77,21 @@ main {
   padding-right: 2%;
 }
 
+.button-for-input:visited {
+  color: #00474b;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-for-input:hover {
+  border-radius: 5px;
+  border: 2px solid #26c2ae;
+  background: #f3f9fa;
+}
+
 .dollar {
   position: absolute;
   width: 0.9rem;
@@ -119,10 +134,27 @@ main {
   line-height: normal;
 }
 
+.tip-example:visited {
+  background: #26c2ae;
+}
+
+.tip-example:hover {
+  background: #9fe8df;
+}
+
 .custom {
   border-radius: 5px;
   background: #f3f9fa;
   color: #547878;
+}
+
+.custom:visited:hover {
+  border: 2px solid #26c2ae;
+  color: #00474b;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* Now, here we have a number of people section */
@@ -142,6 +174,19 @@ main {
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+}
+
+.error {
+  display: none;
+  color: #e17457;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  bottom: 48px;
+  left: 194px;
 }
 
 /* From now on there is section-bottom part */
@@ -196,6 +241,14 @@ span {
   margin: 3.2rem auto 0;
 }
 
+.reset:visited {
+  background: #26c2ae;
+}
+
+.reset:hover {
+  background: #9fe8df;
+}
+
 /* Desktop Version */
 
 @media screen and (min-width: 900px) {
@@ -223,6 +276,10 @@ span {
     padding-bottom: 1.5rem;
   }
 
+  .button-for-input {
+    cursor: pointer;
+  }
+
   /* Here is upper-section part */
 
   .upper-section {
@@ -239,6 +296,11 @@ span {
   .tip-example {
     width: 117px;
     height: 48px;
+    cursor: pointer;
+  }
+
+  .custom {
+    cursor: pointer;
   }
 
   .dollar {
@@ -257,6 +319,7 @@ span {
 
   .reset {
     margin: 15rem auto 0;
+    cursor: pointer;
   }
 
   /* Here starts tip selection area */
