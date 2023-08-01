@@ -6,26 +6,30 @@ let amountPerPerson = document.querySelectorAll("#amount-persona");
 let totalTip = document.querySelectorAll("#total-tip");
 let resetButton = document.querySelectorAll(".reset");
 
+tipExamples.forEach((button) => {
+  button.addEventListener("click", () => {
+    tipExamples.forEach((btn) => btn.classList.remove("selected"));
+    // This line removes the "active" class from all buttons before adding it to the clicked button.
+    button.classList.add("selected");
+  });
+});
+
 const numberPattern = /^\d+(\.\d+)?$/;
 
 tipCustom.addEventListener("input", () => {
   const inputValue = tipCustom.value;
   if (numberPattern.test(inputValue)) {
-    console.log("Valid custom tip:", inputValue);
+    customTipValue = parseFloat(inputValue);
+    tipExamples.forEach((btn) => btn.classList.remove("selected"));
   } else {
-    console.log("Invalid custom tip:", inputValue);
+    customTipValue = null;
   }
 });
 
-tipExamples.forEach((button) => {
-  button.addEventListener("click", () => {
-    tipExamples.forEach((btn) => btn.classList.remove("active"));
-    // This line removes the "active" class from all buttons before adding it to the clicked button.
-    button.classList.add("active");
+let selectedTipPercentage = 0;
 
-    if (button.id === "custom") {
-    } else {
-      const selectedTipPercentage = parseInt(button.textContent);
-    }
-  });
-});
+let customTipValue = null;
+
+function calculateTip() {
+  // Get the bill amount and number of people
+}
