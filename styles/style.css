@@ -77,7 +77,7 @@ main {
   padding-right: 2%;
 }
 
-.button-for-input:visited {
+.button-for-input:active {
   color: #00474b;
   text-align: right;
   font-family: Space Mono;
@@ -134,7 +134,7 @@ main {
   line-height: normal;
 }
 
-.tip-example:visited {
+.tip-example:active {
   background: #26c2ae;
 }
 
