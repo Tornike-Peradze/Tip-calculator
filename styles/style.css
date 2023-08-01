@@ -142,13 +142,13 @@ main {
   background: #9fe8df;
 }
 
-.custom {
+#custom {
   border-radius: 5px;
-  background: #f3f9fa;
+  background-color: #f3f9fa;
   color: #547878;
 }
 
-.custom:visited:hover {
+#custom:hover {
   border: 2px solid #26c2ae;
   color: #00474b;
   font-family: Space Mono;
