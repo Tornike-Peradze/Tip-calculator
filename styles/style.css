@@ -130,21 +130,22 @@ main {
 
 .tip-example:hover {
   background: #9fe8df;
+  transition: 0.5s;
 }
 
 #custom {
   border-radius: 5px;
   background-color: #f3f9fa;
   color: #547878;
-}
-
-#custom:hover {
-  border: 2px solid #26c2ae;
   color: #00474b;
   font-family: Space Mono;
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
+}
+
+#custom:hover {
+  border: 2px solid #26c2ae;
 }
 
 /* Now, here we have a number of people section */
@@ -217,7 +218,7 @@ span {
   letter-spacing: -0.667px;
 }
 
-#reset {
+.reset {
   border-radius: 5px;
   background: #0d686d;
   min-width: 281px;
@@ -231,12 +232,13 @@ span {
   margin: 3.2rem auto 0;
 }
 
-#reset:visited {
+.reset:visited {
   background: #26c2ae;
 }
 
-#reset:hover {
+.reset:hover {
   background: #9fe8df;
+  transition: 0.2s;
 }
 
 /* Desktop Version */
@@ -307,7 +309,7 @@ span {
 
   /* From now on there is section-bottom part */
 
-  #reset {
+  .reset {
     margin: 15rem auto 0;
     cursor: pointer;
   }
